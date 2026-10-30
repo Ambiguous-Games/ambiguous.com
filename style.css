@@ -35,9 +35,9 @@ img { display: block; max-width: 100%; }
 
 /* Header */
 .top { border-bottom: 1px solid var(--line); }
-.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+.top .wrap { display: flex; align-items: center; justify-content: space-between; height: 84px; }
 .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 600; letter-spacing: 0.01em; }
-.brand svg { width: 28px; height: 28px; }
+.brand img { height: 50px; width: auto; display: block; }
 .top nav { display: flex; gap: 22px; font-size: 15px; }
 .top nav a { color: var(--muted); text-decoration: none; }
 .top nav a:hover, .top nav a[aria-current] { color: var(--ink); }
@@ -101,6 +101,7 @@ img { display: block; max-width: 100%; }
 
 @media (max-width: 760px) {
   .top nav { gap: 16px; }
+  .brand img { height: 42px; }
   .top nav .wide { display: none; }
   .hero { padding: 56px 0 36px; }
   .game { grid-template-columns: 1fr; padding: 32px 24px 0; border-radius: 22px; gap: 8px; }
