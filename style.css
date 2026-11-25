@@ -72,6 +72,10 @@ img { display: block; max-width: 100%; }
 .deepwell h2 { font: 400 40px/1.1 "Monoton", sans-serif; color: #d9b8ff; text-shadow: 0 0 18px rgba(186, 120, 255, 0.7); letter-spacing: 0.04em; }
 .zenolith { --g-bg: radial-gradient(120% 100% at 30% 0%, #26204a, #0b0a14 70%); --g-ink: #e6e4ef; }
 .zenolith h2 { font: 400 48px/1.05 "IM Fell English", serif; }
+.pesky-paperclip { --g-bg: linear-gradient(160deg, #fbd9bf, #f6b48f); --g-ink: #3b2a3f; }
+.round-trip { --g-bg: radial-gradient(120% 100% at 70% 0%, #1f3f86, #0b1430 70%); --g-ink: #e9eefc; }
+.round-trip h2 { font: 400 50px/1.05 "Lobster", cursive; color: #ffe8a8; text-shadow: 0 2px 0 #c8323a; }
+.pesky-paperclip h2 { font: 700 46px/1.05 "Fredoka", sans-serif; color: #6d4fd1; }
 
 /* Game pages */
 .page { padding: 64px 0 80px; }
@@ -102,6 +106,10 @@ img { display: block; max-width: 100%; }
 .foot nav { display: flex; gap: 20px; }
 .foot a { color: var(--muted); }
 
+@media (max-width: 940px) {
+  .top nav .wide { display: none; }
+}
+
 @media (max-width: 760px) {
   .top nav { gap: 16px; }
   .brand img { height: 46px; }
@@ -119,3 +127,9 @@ img { display: block; max-width: 100%; }
 .herdwise-title { font: 900 48px/1.05 "Nunito", sans-serif !important; color: #b06a2c; }
 .deepwell-title { font: 400 42px/1.1 "Monoton", sans-serif !important; color: #8f4fe0; letter-spacing: 0.04em; }
 .zenolith-title { font: 400 52px/1.05 "IM Fell English", serif !important; }
+.round-trip-title { font: 400 52px/1.05 "Lobster", cursive !important; color: #c8323a; }
+.pesky-paperclip-title { font: 700 48px/1.05 "Fredoka", sans-serif !important; color: #6d4fd1; }
+@media (prefers-color-scheme: dark) {
+  .round-trip-title { color: #ff6b6b; }
+  .pesky-paperclip-title { color: #a993ff; }
+}
